@@ -1,25 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- BS 5-->
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
+
   <body>
-    <!-- BS5 JS -->
+    <!-- HEADER -->
+    <header class="header">
+      <div
+        class="header-top container-fluid d-flex justify-content-between align-items-center"
+      >
+        <div class="header-left">
+          <ul>
+            <li><a href="#">Have any question ? </a></li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:mail@example.com">mail@example.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="me-0">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="d-flex justify-content-between w-100">
+            <div class="header-logo">
+              <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="logo" />
+                <span>Studious</span>
+              </a>
+            </div>
+            <div class="header-navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mynavbar"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">COURSES</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      PAGES
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">BLOG SINGLE</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">404 PAGE</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">EMAIL TEMPLATE</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">LANDING PAGE</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">SHORTCODES</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- MY CAROUSEL -->
+    <section class="mycarousel"></section>
+    <!-- STUDIOUS -->
+    <section class="studious"></section>
+    <!-- COURSE -->
+    <section class="course"></section>
+    <!-- SERVICES -->
+    <section class="services"></section>
+    <!-- NUMBERS -->
+    <section class="numbers"></section>
+    <!-- FEEDBACK -->
+    <section class="feedback"></section>
+    <!-- INSTRUCTOR -->
+    <section class="instructor"></section>
+    <!-- CONTACT -->
+    <section class="contact"></section>
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
   </body>
