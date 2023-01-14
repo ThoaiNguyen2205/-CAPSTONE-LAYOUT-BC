@@ -8,6 +8,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <!-- FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -113,7 +116,7 @@
                       aria-expanded="false"
                     >
                       PAGES
-                      <i class="fa fa-angle-down"></i>
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
@@ -138,13 +141,19 @@
                     <a class="nav-link" href="#">CONTACT US</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form
+                  class="d-flex align-items-center position-relative"
+                  role="search"
+                >
                   <input
                     class="form-control me-2"
                     type="search"
-                    placeholder="Search"
+                    placeholder="Enter Keyword"
                     aria-label="Search"
                   />
+                  <button type="submit" class="search-item position-absolute">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
                 </form>
               </div>
             </div>
@@ -153,7 +162,36 @@
       </div>
     </header>
     <!-- MY CAROUSEL -->
-    <section class="mycarousel"></section>
+    <section class="mycarousel">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="mycarousel-items items1">
+            <div class="container">
+              <div class="mycarousel-text">
+                <h1>Master the Skills to Drive your Career</h1>
+                <button>
+                  Know More
+                  <i class="fa fa-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="mycarousel-items items2">
+            <div class="container">
+              <div class="mycarousel-text">
+                <h1>Studious is the best choice for everyone</h1>
+                <button>
+                  Know More
+                  <i class="fa fa-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- STUDIOUS -->
     <section class="studious"></section>
     <!-- COURSE -->
@@ -170,6 +208,13 @@
     <section class="contact"></section>
     <!-- FOOTER -->
     <footer class="footer"></footer>
+    <!-- JQUERY JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BS5 JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -181,5 +226,21 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <!-- OWL CAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        // autoplay: true,
+        margin: 0,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
