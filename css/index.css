@@ -2,8 +2,36 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
+}
+.title h1{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+.title span{
+    color: #ff6e65;
+}
+.title h1::after, .title h1::before{
+    content: "";
+    background-color: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+}
+
+.title h1::before{
+    left: -20px;
+    bottom: -8px;
+}
+.title h1::after{
+    left: 20px;
+    bottom: -15px;
 }
 html, body{
     font-family: 'Montserrat', sans-serif;
@@ -38,32 +66,42 @@ html, body{
 .header .header-top a:hover{ 
     color: #ff6e65;   
 }
-.header .header-left li:nth-of-type(2) i{
+.header-left li:nth-of-type(2) i{
     font-size: 13px;
 }
-.header .header-bottom a{
+.header-bottom a{
     transition: all 0.5s;
 }
-.header .header-bottom a:hover{
+.header-bottom a:hover{
     color: #ff6e65;
 }
-.header .header-logo img{
+.header-logo img{
     vertical-align: middle;
 }
-.header .header-logo a{
+.header-logo a{
     font-size: 26px;
     font-weight: 600;
     color: #0d369e;
 }
-.header .header-navbar a{
+.header-navbar a{
     font-weight: 600;
     color: black;  
+}
+.header-bottom .nav-item .active{
+    color: #ff6e65;
 }
 .header-bottom .dropdown-item:focus, .dropdown-item:hover{
     background-color: transparent;
 }
-.header .header-bottom{
+.fixed-top {
     padding: 20px 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 #mynavbar .nav-item a i{
     font-size: 12px;
@@ -165,5 +203,59 @@ html, body{
     position: absolute;
     right: 30px;
     bottom: 30%;
+}
+/* PRODUCTS */
+.products .products-item{
+    padding: 50px 35px;
+}
+.products .row i{
+    font-size: 40px;
+}
+.products .row a{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: all .5s;
+}
+.products .row a:hover{
+    color: black;
+}
+.products .row .item-book{
+    transform: skewX(-10deg);
+}
+.products {
+    margin-top: -4rem;
+    z-index: 10;
+}
+/* STUDIOUS */
+.studious .studious-item span{
+    color: #0d369e;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: 600;
+    width: 70px;
+    height: 70px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #e9edf6;
+}
+.studious .studious-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    margin: 20px 0;
+    display: inline-block;
+    transition: all .5s;
+}
+.studious .studious-text a:hover{
+    color: #ff6e65;
+}
+.studious .studious-text p{
+    font-size: 15px;
 }
 
