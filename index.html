@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -36,8 +36,7 @@
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-
-  <body>
+  <body class="body">
     <!-- HEADER -->
     <header class="header">
       <div
@@ -81,7 +80,7 @@
           <div class="header-logo">
             <a class="navbar-brand" href="#">
               <img src="./img/logo.png" alt="logo" />
-              <span>Studious</span>
+              <span class="logo-text">Studious</span>
             </a>
           </div>
           <div class="header-navbar">
@@ -157,12 +156,12 @@
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
+              <div id="toggleDayOrNight"></div>
             </div>
           </div>
         </div>
       </nav>
     </div>
-
     <!-- MY CAROUSEL -->
     <section class="mycarousel">
       <div class="owl-carousel owl-theme">
@@ -288,7 +287,7 @@
       </div>
     </section>
     <!-- COURSE -->
-    <section class="course py-5">
+    <section class="course py-5" id="theme">
       <div class="course-content container">
         <div class="title mb-5">
           <h1>Pick a Course to <span>Get Started</span></h1>
