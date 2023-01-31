@@ -413,6 +413,9 @@ button:hover {
 .course {
     background-color: #f8f9ff;
 }
+#myBody .card{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 .course .course-price {
     font-size: 18px;
@@ -722,7 +725,7 @@ letter-spacing: .4px;
     width: 100%;
     border-radius: 8px 0px 0px 8px;
     height: 55px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(80 76 76 / 20%);
 }
 .w3l-forms-9 .rightside-form button {
     background: #0d369f;
