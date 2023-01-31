@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <!-- HEADER -->
     <header class="header">
       <div
@@ -81,7 +81,7 @@
           <div class="header-logo">
             <a class="navbar-brand" href="#">
               <img src="./img/logo.png" alt="logo" />
-              <span>Studious</span>
+              <span class="header-title">Studious</span>
             </a>
           </div>
           <div class="header-navbar">
@@ -160,6 +160,10 @@
             </div>
           </div>
         </div>
+        <button class="btn" id="switchButton" title="Click to switch theme">
+          <i class="far fa-moon"></i>
+          <i class="far fa-sun"></i>
+        </button>
       </nav>
     </div>
 
@@ -304,7 +308,7 @@
                 </div>
                 <h6 class="course-price">$400</h6>
               </div>
-              <div class="card-body">
+              <div class="card-body course-card">
                 <div class="card-icons d-flex justify-content-between">
                   <div class="icon">
                     <i class="fa fa-signal" aria-hidden="true"></i>
@@ -372,7 +376,7 @@
                 </div>
                 <h6 class="course-price">$900</h6>
               </div>
-              <div class="card-body">
+              <div class="card-body course-card">
                 <div class="card-icons d-flex justify-content-between">
                   <div class="icon">
                     <i class="fa fa-signal" aria-hidden="true"></i>
@@ -439,7 +443,7 @@
                 </div>
                 <h6 class="course-price">$99</h6>
               </div>
-              <div class="card-body">
+              <div class="card-body course-card">
                 <div class="card-icons d-flex justify-content-between">
                   <div class="icon">
                     <i class="fa fa-signal" aria-hidden="true"></i>
@@ -506,7 +510,7 @@
                 </div>
                 <h6 class="course-price">$369</h6>
               </div>
-              <div class="card-body">
+              <div class="card-body course-card">
                 <div class="card-icons d-flex justify-content-between">
                   <div class="icon">
                     <i class="fa fa-signal" aria-hidden="true"></i>
@@ -516,7 +520,7 @@
                     <i class="fa-regular fa-clock"></i> 10 week
                   </div>
                 </div>
-                <h5 class="card-title text-dark">Donec sed teus enime</h5>
+                <h5 class="card-title">Donec sed teus enime</h5>
                 <p class="card-text border-bottom pb-5">
                   Sed do eiusmod tempor incididunt ut labore et dolore magna
                   aliqua.
@@ -573,7 +577,7 @@
                 </div>
                 <h6 class="course-price">$499</h6>
               </div>
-              <div class="card-body">
+              <div class="card-body course-card">
                 <div class="card-icons d-flex justify-content-between">
                   <div class="icon">
                     <i class="fa fa-signal" aria-hidden="true"></i>
@@ -640,7 +644,7 @@
                 </div>
                 <h6 class="course-price">$289</h6>
               </div>
-              <div class="card-body">
+              <div class="card-body course-card">
                 <div class="card-icons d-flex justify-content-between">
                   <div class="icon">
                     <i class="fa fa-signal" aria-hidden="true"></i>
@@ -717,7 +721,7 @@
                 <div class="col-md-6">
                   <div class="col-items">
                     <div class="d-flex align-items-center feature-gd">
-                      <div class="icon">
+                      <div class="icon-service">
                         <i
                           class="fa fa-american-sign-language-interpreting"
                           aria-hidden="true"
@@ -733,7 +737,7 @@
                 <div class="col-md-6 mt-md-0 mt-4">
                   <div class="col-items">
                     <div class="d-flex align-items-center feature-gd">
-                      <div class="icon">
+                      <div class="icon-service">
                         <i class="fa fa-download" aria-hidden="true"></i>
                       </div>
                       <div class="icon-info">
@@ -746,7 +750,7 @@
                 <div class="col-md-6 mt-4 pt-md-2">
                   <div class="col-items">
                     <div class="d-flex align-items-center feature-gd">
-                      <div class="icon">
+                      <div class="icon-service">
                         <i class="fa fa-headphones" aria-hidden="true"></i>
                       </div>
                       <div class="icon-info">
@@ -759,7 +763,7 @@
                 <div class="col-md-6 mt-4 pt-md-2">
                   <div class="col-items">
                     <div class="d-flex align-items-center feature-gd">
-                      <div class="icon">
+                      <div class="icon-service">
                         <i class="fa fa-play-circle" aria-hidden="true"></i>
                       </div>
                       <div class="icon-info">
@@ -961,7 +965,7 @@
               </div>
 
               <div class="card-body text-center">
-                <h5 class="">
+                <h5 class="services-card">
                   <a href="#" class="text-decoration-none">Olive Yew</a>
                 </h5>
                 <p class="">Teaches Design</p>
@@ -1002,7 +1006,7 @@
               </div>
 
               <div class="card-body text-center">
-                <h5 class="">
+                <h5 class="services-card">
                   <a href="#" class="text-decoration-none">Aida Joe</a>
                 </h5>
                 <p class="">UI/UX Designer</p>
@@ -1043,7 +1047,7 @@
               </div>
 
               <div class="card-body text-center">
-                <h5 class="">
+                <h5 class="services-card">
                   <a href="#" class="text-decoration-none">Teri Dac</a>
                 </h5>
                 <p class="">Teaches Skills</p>
@@ -1084,7 +1088,7 @@
               </div>
 
               <div class="card-body text-center">
-                <h5 class="">
+                <h5 class="services-card">
                   <a href="#" class="text-decoration-none">Anton Bne</a>
                 </h5>
                 <p class="">Web Designer</p>

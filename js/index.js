@@ -33,5 +33,33 @@ var btn = $("#button");
         $("html, body").animate({ scrollTop: 0 }, "300");
       });
     
-
+// THEME
+document.getElementById("switchButton").onclick = function () {
   
+  document.getElementById("myBody").classList.toggle("dark");
+  $('.header-bottom').toggleClass('header-dark-theme')
+  $('.header-top').toggleClass('top-dark')
+  $('.nav-link').toggleClass('navbar-dark')
+  $('.dropdown-item').toggleClass('navbar-dark')
+  $('.dropdown-menu').toggleClass('theme-dark')
+  $('.header-title').toggleClass('navbar-dark')
+  $('.title h1').toggleClass('info-light')
+  $('.studious-text a').toggleClass('navbar-dark')
+  $('.studious-item span').toggleClass('icon-dark')
+  $('.course').toggleClass('course-dark')
+  $('.card-body ').toggleClass('course-dark')
+  $('.card-text ').toggleClass('info-gray')
+  $('.card-title ').toggleClass('navbar-dark')
+  $('.icon ').toggleClass('info-light')
+  $('.icon-service i ').toggleClass('icon-dark')
+  $('.col-items').toggleClass('course-dark')
+  $('.icon-info h5').toggleClass('info-light')
+  $('.counter-item div').toggleClass('info-light')
+  $('.counter-item p').toggleClass('info-light')
+  $('.text-left h5').toggleClass('info-light')
+  $('.services-card a').toggleClass('navbar-dark')
+  $('.title-style').toggleClass('info-light')
+  $('.right-side').toggleClass('header-dark-theme')
+  $('.title-head').toggleClass('info-light')
+  $('.feedback-items').toggleClass('feedback-dark-theme')
+};

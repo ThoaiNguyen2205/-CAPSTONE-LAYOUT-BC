@@ -57,7 +57,86 @@ button {
 button:hover {
     background-color: #0d369e;
 }
-
+/* DARK/LIGHT THEME */
+#myBody .btn i{
+    font-size: 23px;
+    color: #0d369e;
+    transition: all .3s;
+}
+#myBody .btn:hover i{
+    font-size: 23px;
+    color: #ff6e65;
+}
+#myBody{
+    background-color:white;
+  }
+  #switchButton {
+    background-color: white;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+  .dark#myBody{
+    background-color:#161c2d;
+  }
+  .dark #switchButton {
+    background-color: #161c2d;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: #0d369e;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  .dark .card {
+    background-color: white;
+    color: white;
+  }
+#myBody .header-dark-theme{
+    background-color: #161c2d;
+}
+#myBody .feedback-dark-theme{
+    background-color: #0f1525;
+}
+#myBody .top-dark{
+    background-color: #4867b0;
+}
+#myBody .navbar-dark{
+    color: white;
+    transition: all .5s;
+}
+#mybody .text-white{
+    color: white;
+}
+#myBody .navbar-dark:hover{
+    color: #ff6e65;
+}
+#myBody .card:hover .card-title{
+    color: #ff6e65;
+}
+#myBody .theme-dark{
+    background-color: 
+    #161c2d;
+    color: white;
+}
+#myBody .icon-dark{
+    background-color: rgb(168 176 195 / 11%);
+    color: #4867b0;
+}
+#myBody .course-dark{
+    background-color: #121725;
+}
+#myBody .info-light{
+    color: white;
+}
+#myBody .info-gray{
+    color: #707070;
+}
 /* HEADER */
 .header .header-top {
     padding: 14px 30px;
@@ -119,7 +198,7 @@ button:hover {
     color: black;
 }
 
-.header-bottom .nav-item .active {
+#myBody .nav-item .active {
     color: #ff6e65;
 }
 
@@ -177,8 +256,8 @@ button:hover {
 }
 
 #mynavbar .form-control:focus {
-    color: #212529;
-    background-color: #fff;
+    color: var(--heading-color);
+    background-color: transparent;
     outline: 0;
     box-shadow: none;
 }
@@ -455,7 +534,7 @@ button:hover {
     border-radius: 5px;
     padding: 30px;
 }
-.col-items .icon i {
+.col-items .icon-service i {
     background: #e9edf6;
     color: #0d369f;
     font-size: 28px;
@@ -573,7 +652,7 @@ letter-spacing: .4px;
     transition: all .5s;
 }
 .instructor .card{
-    border: 1px solid transparent;
+    border: none;
     box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
 }
 .instructor .card:hover .card-body h5 a{
@@ -582,6 +661,7 @@ letter-spacing: .4px;
 .instructor .card-body p{
     font-size: 80%;
     font-weight: 400;
+    color: #707070;
 }
 /* CONTACT */
 .contact h3{
@@ -642,7 +722,7 @@ letter-spacing: .4px;
     width: 100%;
     border-radius: 8px 0px 0px 8px;
     height: 55px;
-    border: 1px solid #eee;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .w3l-forms-9 .rightside-form button {
     background: #0d369f;
@@ -653,13 +733,6 @@ letter-spacing: .4px;
     cursor: pointer;
     font-weight: 600;
     border-radius: 0 8px 8px 0;
-}
-.form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #91e6c4;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(46 202 139 / 25%);
 }
 .footer h6{
     color: #fff;
