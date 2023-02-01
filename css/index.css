@@ -116,7 +116,10 @@ button:hover {
 #myBody .navbar-dark:hover{
     color: #ff6e65;
 }
-#myBody .card:hover .card-title{
+#myBody .card-items:hover .navbar-dark{
+    color: #ff6e65;
+}
+#myBody .card-title:hover{
     color: #ff6e65;
 }
 #myBody .theme-dark{
@@ -136,6 +139,10 @@ button:hover {
 }
 #myBody .info-gray{
     color: #707070;
+}
+#myBody .nav-toggle-dark{
+    background-color: #4867b0;
+    color: white;
 }
 /* HEADER */
 .header .header-top {
@@ -243,7 +250,6 @@ button:hover {
 #mynavbar .search-item:hover {
     color: #ff6e65;
 }
-
 #mynavbar form input {
     font-size: 15px;
     border: none;
@@ -413,9 +419,7 @@ button:hover {
 .course {
     background-color: #f8f9ff;
 }
-#myBody .card{
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
+
 
 .course .course-price {
     font-size: 18px;
@@ -570,6 +574,9 @@ letter-spacing: .4px;
     font-weight: 600;
     color: black;
 }
+.numbers .counter-item{
+    border-right: 1px solid #eee;
+}
 .numbers .count-text{
     text-transform: uppercase;
     color: black;
@@ -618,7 +625,7 @@ letter-spacing: .4px;
     transform: translateY(100%);
     transition: all .5s;
 }
-.instructor .card:hover .icons-contact{
+.instructor .card-items:hover .icons-contact{
     transform: translateX(0);
     transform: translateY(0);
 } 
@@ -658,7 +665,7 @@ letter-spacing: .4px;
     border: none;
     box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
 }
-.instructor .card:hover .card-body h5 a{
+.instructor .card-items:hover .card-body h5 a{
     color: #ff6e65;
 }
 .instructor .card-body p{
@@ -832,8 +839,8 @@ letter-spacing: .4px;
     text-align: center;
     border-radius: 5px;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 40px;
+    right: 30px;
     transition: all .5s;
     opacity: 0;
     visibility: hidden;
@@ -863,3 +870,48 @@ letter-spacing: .4px;
     opacity: 1;
     visibility: visible;
   }
+/* REPONSIVE */
+@media only screen and (max-width: 768px) {
+    .header{
+        height: 0px;
+    }
+    .navbar-theme{
+        margin-left: 10px;
+    }
+    .form-control{
+        margin-left: 0 !important;
+    }
+    .products-item{
+        margin-bottom: 20px;
+    }
+    .numbers .counter-item{
+        border-right: none;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .carousel{
+        max-width: 100%;
+    }
+    .mycarousel .mycarousel-text h1 {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 50px;
+    }
+    .mycarousel .mycarousel-items button {
+        padding: 10px 25px;
+        font-size: 14px;
+       margin-bottom: 50px;
+    }
+    button {  
+        padding: 15px 20px;
+    }
+    .contact h3 {
+        font-size: 32px;
+        line-height: 35px;       
+    }
+  }
+
+
+ 

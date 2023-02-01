@@ -76,99 +76,116 @@
     </header>
     <!-- HEADER BOTTOM -->
     <div class="header-bottom fixed-top">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="d-flex justify-content-between w-100">
-          <div class="header-logo">
-            <a class="navbar-brand" href="#">
-              <img src="./img/logo.png" alt="logo" />
-              <span class="header-title">Studious</span>
-            </a>
-          </div>
-          <div class="header-navbar">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#mynavbar"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >HOME</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">COURSES</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    PAGES
-                    <i class="fa fa-angle-down"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">BLOG SINGLE</a>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="d-flex justify-content-between w-100">
+            <div class="header-logo">
+              <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="logo" />
+                <span class="header-title">Studious</span>
+              </a>
+            </div>
+            <div class="header-navbar d-flex align-items-center">
+              <div class="navbar-left">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mynavbar"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >HOME</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">COURSES</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        PAGES
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">BLOG POSTS</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">BLOG SINGLE</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">404 PAGE</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">EMAIL TEMPLATE</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">LANDING PAGE</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">SHORTCODES</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACT US</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">404 PAGE</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">EMAIL TEMPLATE</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">LANDING PAGE</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">SHORTCODES</a>
+                      <form
+                        class="d-flex align-items-center position-relative"
+                        role="search"
+                      >
+                        <input
+                          class="form-control me-2"
+                          type="search"
+                          placeholder="Enter Keyword"
+                          aria-label="Search"
+                        />
+                        <button
+                          type="submit"
+                          class="search-item position-absolute"
+                        >
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                      </form>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT US</a>
-                </li>
-              </ul>
-              <form
-                class="d-flex align-items-center position-relative"
-                role="search"
-              >
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Enter Keyword"
-                  aria-label="Search"
-                />
-                <button type="submit" class="search-item position-absolute">
-                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="navbar-theme">
+                <button
+                  class="btn"
+                  id="switchButton"
+                  title="Click to switch theme"
+                >
+                  <i class="far fa-moon"></i>
+                  <i class="far fa-sun"></i>
                 </button>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
-        <button class="btn" id="switchButton" title="Click to switch theme">
-          <i class="far fa-moon"></i>
-          <i class="far fa-sun"></i>
-        </button>
-      </nav>
+        </nav>
+      </div>
     </div>
 
     <!-- MY CAROUSEL -->
-    <section class="mycarousel">
+    <section class="mycarousel container-fliud">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <div class="mycarousel-items items1">
@@ -199,7 +216,7 @@
       </div>
     </section>
     <!-- PRODUCTS -->
-    <section class="products position-relative">
+    <section class="products position-relative container-fluid">
       <div class="products-content container">
         <div class="row">
           <div class="col-lg-3 col-md-6 px-lg-2">
@@ -207,7 +224,10 @@
               class="products-item bg-primary text-light text-center rounded"
             >
               <i class="fa fa-cogs"></i>
-              <a href="#">Engineering & Architecture</a>
+              <a href="#"
+                >Engineering & <br />
+                Architecture</a
+              >
             </div>
           </div>
           <div class="col-lg-3 col-md-6 px-lg-2">
@@ -215,7 +235,10 @@
               class="products-item bg-warning text-light text-center text-center rounded"
             >
               <i class="fa fa-book item-book"></i>
-              <a href="#">Learning Management</a>
+              <a href="#"
+                >Learning <br />
+                Management</a
+              >
             </div>
           </div>
           <div class="col-lg-3 col-md-6 px-lg-2">
@@ -223,7 +246,10 @@
               class="products-item bg-danger text-light text-center text-center rounded"
             >
               <i class="fa fa-coffee"></i>
-              <a href="#">Business & Management</a>
+              <a href="#"
+                >Business & <br />
+                Management</a
+              >
             </div>
           </div>
           <div class="col-lg-3 col-md-6 px-lg-2">
@@ -231,14 +257,17 @@
               class="products-item bg-success text-light text-center tex rounded"
             >
               <i class="fa fa-hourglass-half"></i>
-              <a href="#">Artificial Intelligence</a>
+              <a href="#"
+                >Artificial <br />
+                Intelligence</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- STUDIOUS -->
-    <section class="studious pt-5">
+    <section class="studious pt-5 container-fluid">
       <div class="studious-content py-5">
         <div class="title mb-5">
           <h1>Welcome to <span>Studious</span></h1>
@@ -703,10 +732,8 @@
           </div>
         </div>
         <button>
-          Browse more courses<i
-            class="fa fa-arrow-right ms-2"
-            aria-hidden="true"
-          ></i>
+          <p class="d-inline">Browse more courses</p>
+          <span class="fa fa-arrow-right ms-2" aria-hidden="true"></span>
         </button>
       </div>
     </section>
@@ -792,7 +819,7 @@
         <div class="w3-stats mb-5">
           <div class="row text-center">
             <div class="col-lg-3 col-sm-6">
-              <div class="counter-item border-end">
+              <div class="counter-item">
                 <div
                   class="timer count-title count-number counter"
                   data-to="6300"
@@ -804,7 +831,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
-              <div class="counter-item border-end">
+              <div class="counter-item">
                 <div
                   class="timer count-title count-number counter"
                   data-to="638"
@@ -816,7 +843,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
-              <div class="counter-item border-end">
+              <div class="counter-item">
                 <div
                   class="timer count-title count-number counter"
                   data-to="7600"
@@ -828,7 +855,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
-              <div class="counter-item border-right-0">
+              <div class="counter-item border-end-0">
                 <div
                   class="timer count-title count-number counter"
                   data-to="36"
@@ -932,7 +959,7 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-3 col-sm-6">
-            <div class="card" style="width: 100%">
+            <div class="card card-items" style="width: 100%">
               <div class="card-content p-2">
                 <div class="card-imgs position-relative">
                   <a href="#">
@@ -973,7 +1000,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="card" style="width: 100%">
+            <div class="card card-items" style="width: 100%">
               <div class="card-content p-2">
                 <div class="card-imgs position-relative">
                   <a href="#">
@@ -1014,7 +1041,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="card" style="width: 100%">
+            <div class="card card-items" style="width: 100%">
               <div class="card-content p-2">
                 <div class="card-imgs position-relative">
                   <a href="#">
@@ -1055,7 +1082,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="card" style="width: 100%">
+            <div class="card card-items" style="width: 100%">
               <div class="card-content p-2">
                 <div class="card-imgs position-relative">
                   <a href="#">
@@ -1100,7 +1127,7 @@
     </section>
     <!-- CONTACT -->
     <section class="contact pb-5 pt-5">
-      <div class="container pb-md-5 pb-4 mb-5">
+      <div class="container pb-md-5 pb-4 mb-5 overflow-hidden">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-5 about-2-secs-right mb-lg-0 mb-4 text-center">
             <img

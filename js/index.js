@@ -62,4 +62,7 @@ document.getElementById("switchButton").onclick = function () {
   $('.right-side').toggleClass('header-dark-theme')
   $('.title-head').toggleClass('info-light')
   $('.feedback-items').toggleClass('feedback-dark-theme')
+  $('.navbar-toggler').toggleClass('nav-toggle-dark')
+  // $('.navbar-collapse').toggleClass('nav-toggle-dark')
+  
 };
